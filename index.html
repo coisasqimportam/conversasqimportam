@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fontes · Conversas que Importam</title>
+<meta name="description" content="Todas as fontes dos posts do @conversasqimportam, organizadas por post. Fatos com fonte, sem gritaria.">
+<meta property="og:title" content="Fontes · Conversas que Importam">
+<meta property="og:description" content="Todas as fontes dos posts do @conversasqimportam, organizadas por post.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;700;800&family=Space+Mono:wght@700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath d='M10 10H120V90H58L30 118V90H10Z' fill='%231F2EFF' stroke='%230B0B0B' stroke-width='10'/%3E%3Cpath d='M80 50H190V130H170V158L142 130H80Z' fill='%23FFE500' stroke='%230B0B0B' stroke-width='10'/%3E%3Crect x='80' y='50' width='40' height='40' fill='%231FD15A' stroke='%230B0B0B' stroke-width='10'/%3E%3C/svg%3E">
+<style>
+:root{
+  --azul:#1F2EFF; --verde:#1FD15A; --amarelo:#FFE500; --preto:#0B0B0B; --branco:#FFFFFF;
+  --borda:4px solid var(--preto);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--preto);font-family:'Archivo',system-ui,sans-serif;font-weight:500;font-size:18px;line-height:1.45}
+a{color:inherit}
+:focus-visible{outline:4px solid var(--azul);outline-offset:3px}
+.pular{position:absolute;left:-9999px;top:0;background:var(--amarelo);padding:12px 16px;font-weight:800;z-index:10}
+.pular:focus{left:16px;top:16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.mono{font-family:'Space Mono',ui-monospace,monospace;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+
+/* topo */
+header{background:var(--preto);color:var(--branco);border-bottom:8px solid var(--amarelo)}
+header .wrap{display:flex;gap:20px;align-items:center;padding-top:28px;padding-bottom:28px}
+header svg{flex-shrink:0;width:88px;height:auto}
+header h1{margin:0;font-family:'Archivo Black',sans-serif;font-weight:400;font-size:clamp(28px,7vw,44px);line-height:.95;text-transform:uppercase;letter-spacing:-1px}
+header h1 span{color:var(--amarelo)}
+header p{margin:8px 0 0;font-size:15px}
+header a{color:var(--amarelo)}
+
+/* intro */
+.intro{padding:28px 0 8px}
+.intro p{margin:0 0 12px;font-size:19px}
+.intro strong{font-weight:800}
+.balao{position:relative;background:var(--amarelo);border:var(--borda);padding:18px 20px;margin:8px 0 36px;font-weight:800;font-size:20px}
+.balao::after{content:"";position:absolute;left:40px;bottom:-26px;border-left:4px solid var(--preto);width:0;height:0;border-style:solid;border-width:22px 22px 0 0;border-color:var(--amarelo) transparent transparent transparent}
+.balao::before{content:"";position:absolute;left:36px;bottom:-34px;border-style:solid;border-width:30px 30px 0 0;border-color:var(--preto) transparent transparent transparent}
+
+/* índice */
+nav h2{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:22px;text-transform:uppercase;margin:0 0 12px}
+.indice{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.indice a{display:flex;align-items:center;min-height:52px;padding:8px 12px;border:var(--borda);text-decoration:none;font-weight:800;font-size:15px;line-height:1.2;background:var(--branco)}
+.indice a:hover{background:var(--amarelo)}
+.grupo-titulo{margin:36px 0 4px;padding:10px 14px;background:var(--preto);color:var(--branco);font-family:'Archivo Black',sans-serif;font-weight:400;font-size:clamp(20px,5vw,26px);text-transform:uppercase;line-height:1.05}
+.grupo-titulo.pesa{background:var(--preto);color:var(--amarelo)}
+.grupo-nota{margin:8px 0 0;font-size:16px}
+
+/* posts */
+section.post{border:var(--borda);margin:20px 0;scroll-margin-top:16px}
+section.post > h3{margin:0;padding:14px 16px;font-family:'Archivo Black',sans-serif;font-weight:400;font-size:clamp(20px,5vw,26px);line-height:1.05;text-transform:uppercase;border-bottom:var(--borda)}
+.c-azul > h3{background:var(--azul);color:var(--branco)}
+.c-verde > h3{background:var(--verde)}
+.c-amarelo > h3{background:var(--amarelo)}
+.c-preto > h3{background:var(--preto);color:var(--branco)}
+.post .resumo{margin:0;padding:14px 16px 4px;font-size:17px}
+.post ul{list-style:none;margin:0;padding:8px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.post li a{display:block;padding:12px 14px;border:3px solid var(--preto);text-decoration:none;background:var(--branco)}
+.post li a:hover{background:#F2F2F2}
+.post li .veiculo{display:block;font-size:13px;margin-bottom:4px}
+.post li .titulo{display:block;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.post li .ext{white-space:nowrap}
+.post .inspirado{margin:0;padding:0 16px 16px;font-size:15px}
+.topo-link{display:inline-block;margin:0 16px 16px;font-size:13px}
+
+footer{margin-top:48px;background:var(--preto);color:var(--branco);padding:28px 0}
+footer p{margin:0 0 8px}
+footer a{color:var(--amarelo)}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para as fontes</a>
+
+<header id="topo">
+  <div class="wrap">
+    <svg viewBox="0 0 200 170" role="img" aria-label="Símbolo Conversas que Importam: dois balões de fala sobrepostos"><path d="M10 10H120V90H58L30 118V90H10Z" fill="#1F2EFF" stroke="#FFFFFF" stroke-width="7"/><path d="M80 50H190V130H170V158L142 130H80Z" fill="#FFE500" stroke="#FFFFFF" stroke-width="7"/><rect x="80" y="50" width="40" height="40" fill="#1FD15A" stroke="#FFFFFF" stroke-width="7"/></svg>
+    <div>
+      <h1>Conversas que <span>Importam</span></h1>
+      <p><a href="https://www.instagram.com/conversasqimportam/">@conversasqimportam</a> · fontes de todos os posts</p>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo" class="wrap">
+  <div class="intro">
+    <div class="balao">Tudo o que a gente publica tem fonte. Aqui estão todas, organizadas por post.</div>
+    <p>Viu um post nosso e quer conferir? Ache o título abaixo e abra as reportagens. Em cada post também mostramos <strong>o que o citado responde</strong>.</p>
+    <p class="mono" style="font-size:13px">Atualizado em 22/10/2026</p>
+  </div>
+
+  <nav aria-labelledby="indice-titulo">
+    <h2 id="indice-titulo">Ir direto para o post</h2>
+    <p class="mono" style="font-size:13px;margin:0 0 8px">Série · O que pesa para você?</p>
+    <ul class="indice">
+      <li><a href="#p01">01 · Saúde</a></li>
+      <li><a href="#p02">02 · Viver sem medo</a></li>
+      <li><a href="#p03">03 · Comida e contas</a></li>
+      <li><a href="#p04">04 · Trabalho e folga</a></li>
+      <li><a href="#p05">05 · Político honesto</a></li>
+      <li><a href="#p06">06 · Escola</a></li>
+      <li><a href="#p07">07 · Aposentadoria</a></li>
+      <li><a href="#p08">08 · Natureza</a></li>
+      <li><a href="#p09">09 · Democracia</a></li>
+      <li><a href="#p10">10 · Brasil dono de si</a></li>
+    </ul>
+    <p class="mono" style="font-size:13px;margin:16px 0 8px">Outros carrosséis</p>
+    <ul class="indice">
+      <li><a href="#c1">Sala 2601</a></li>
+      <li><a href="#c2">Fraude do INSS</a></li>
+      <li><a href="#c3">Rachadinha</a></li>
+      <li><a href="#c4">Patrimônio</a></li>
+      <li><a href="#c5">Emenda e milícia</a></li>
+      <li><a href="#c6">Advocacia</a></li>
+      <li><a href="#c7">Campanha 2026</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="grupo-titulo pesa">Série · O que pesa para você?</h2>
+  <p class="grupo-nota">Série inspirada no site <a href="https://flavioemfatos.com/2turno/">Flávio em Fatos</a>. Cada informação foi conferida nas reportagens abaixo.</p>
+
+  <section class="post c-verde" id="p01" aria-labelledby="p01-t">
+    <h3 id="p01-t">01 · A saúde da minha família</h3>
+    <p class="resumo">Piso constitucional da saúde e privatização de 95% das estatais.</p>
+    <ul>
+      <li><a href="https://www.correiobraziliense.com.br/politica/2026/04/7403233-flavio-avalia-reajuste-de-gastos-sociais-pela-inflacao-e-mais-privatizacoes.html"><span class="veiculo mono">Correio Braziliense · 22/04/2026</span><span class="titulo">Flávio avalia reajuste de gastos sociais pela inflação e mais privatizações</span></a></li>
+      <li><a href="https://www.bahianoticias.com.br/noticia/316086-flavio-diz-que-e-fake-news-materia-da-folha-sobre-plano-que-reduz-aposentadorias-e-enfraquece-protecao-social"><span class="veiculo mono">Bahia Notícias · 23/04/2026</span><span class="titulo">Flávio diz que é fake news matéria da Folha sobre o plano</span></a></li>
+      <li><a href="https://neofeed.com.br/economia/as-promessas-de-flavio-bolsonaro-privatizacao-de-95-das-estatais-e-corte-de-gastos-e-de-impostos/en/"><span class="veiculo mono">NeoFeed · 11/02/2026</span><span class="titulo">As promessas de Flávio: privatização de 95% das estatais</span></a></li>
+      <li><a href="https://www.oliberal.com/politica/flavio-diz-que-nao-vai-desvincular-reajuste-do-minimo-e-nem-alterar-pisos-de-saude-e-educacao-1.1183567"><span class="veiculo mono">O Liberal · 17/10/2026 · resposta de Flávio</span><span class="titulo">Flávio diz que não vai alterar pisos de saúde e educação</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="p02" aria-labelledby="p02-t">
+    <h3 id="p02-t">02 · Viver sem medo</h3>
+    <p class="resumo">Adriano da Nóbrega e as críticas de Flávio à Polícia Federal.</p>
+    <ul>
+      <li><a href="https://www.bemparana.com.br/noticia/ex-policial-militar-estava-preso-quando-filho-de-presidente-o-homenageou"><span class="veiculo mono">Bem Paraná</span><span class="titulo">Ex-policial militar estava preso quando foi homenageado</span></a></li>
+      <li><a href="https://www.gazetadopovo.com.br/eleicoes/2026/flavio-bolsonaro-sobe-o-tom-e-chama-diretor-da-pf-de-pau-mandado-de-lula/"><span class="veiculo mono">Gazeta do Povo · 23/07/2026</span><span class="titulo">Flávio sobe o tom e critica o diretor da PF</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="p03" aria-labelledby="p03-t">
+    <h3 id="p03-t">03 · A comida e as contas do mês</h3>
+    <p class="resumo">Salário mínimo, pagamento por hora e patrimônio declarado.</p>
+    <ul>
+      <li><a href="https://www.bahianoticias.com.br/noticia/311858-salario-minimo-para-2026-e-fixado-em-r-1621-com-reajuste-de-679"><span class="veiculo mono">Bahia Notícias · 2026</span><span class="titulo">Salário mínimo de 2026 é fixado em R$ 1.621</span></a></li>
+      <li><a href="https://istoedinheiro.com.br/bolsonaro-reajusta-salario-minimo"><span class="veiculo mono">IstoÉ Dinheiro · 12/12/2022</span><span class="titulo">Reajustes do salário mínimo no governo Bolsonaro</span></a></li>
+      <li><a href="https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/flavio-bolsonaro-sugere-pagamento-por-hora-em-alternativa-escala-6x1"><span class="veiculo mono">Agência Brasil · 19/05/2026</span><span class="titulo">Flávio sugere pagamento por hora em alternativa à escala 6x1</span></a></li>
+      <li><a href="https://www.suno.com.br/noticias/?p=666129"><span class="veiculo mono">Suno · dados do TSE</span><span class="titulo">Patrimônio declarado de Flávio Bolsonaro</span></a></li>
+      <li><a href="https://www.oliberal.com/politica/flavio-diz-que-nao-vai-desvincular-reajuste-do-minimo-e-nem-alterar-pisos-de-saude-e-educacao-1.1183567"><span class="veiculo mono">O Liberal · 17/10/2026 · resposta de Flávio</span><span class="titulo">Flávio diz que manterá o aumento real do mínimo</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-verde" id="p04" aria-labelledby="p04-t">
+    <h3 id="p04-t">04 · Meu trabalho e minha folga</h3>
+    <p class="resumo">O fim da escala 6x1 e as posições de Flávio ao longo do ano.</p>
+    <ul>
+      <li><a href="https://www.poder360.com.br/poder-eleicoes-2026/flavio-diz-que-nao-vai-retomar-a-escala-6-x-1"><span class="veiculo mono">Poder360 · 16/10/2026</span><span class="titulo">Flávio diz que vai manter o fim da escala 6x1 se for eleito</span></a></li>
+      <li><a href="https://www.folhape.com.br/politica/hipocrisia-e-prejudicial-ao-trabalhador-saiba-o-que-flavio-ja/518111/"><span class="veiculo mono">Folha PE · out/2026</span><span class="titulo">O que Flávio já falou sobre o fim da escala 6x1</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="p05" aria-labelledby="p05-t">
+    <h3 id="p05-t">05 · Político honesto</h3>
+    <p class="resumo">Inquérito no STF sobre os repasses de Vorcaro e a regra do art. 86.</p>
+    <ul>
+      <li><a href="https://www.diariodepernambuco.com.br/politica/2026/09/11723630-flavio-bolsonaro-e-alvo-de-inquerito-da-pf-no-stf-no-caso-dark-horse.html"><span class="veiculo mono">Diário de Pernambuco · set/2026</span><span class="titulo">Flávio é alvo de inquérito da PF no STF no caso Dark Horse</span></a></li>
+      <li><a href="https://www.correiodamanha.com.br/politica/2026/09/318548-flavio-diz-nao-temer-exposicao-do-caso-master-e-volta-a-defender-relacao-com-vorcaro.html"><span class="veiculo mono">Correio da Manhã · 12/09/2026 · resposta de Flávio</span><span class="titulo">Flávio defende relação com Vorcaro</span></a></li>
+      <li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"><span class="veiculo mono">Constituição Federal · art. 86, §4º</span><span class="titulo">Texto da Constituição</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="p06" aria-labelledby="p06-t">
+    <h3 id="p06-t">06 · A escola dos meus filhos</h3>
+    <p class="resumo">O que o plano de governo diz (e não diz) sobre educação.</p>
+    <ul>
+      <li><a href="https://www.band.com.br/educacao/no-dia-dos-professores-compare-propostas-de-lula-e-flavio-para-a-educacao"><span class="veiculo mono">Band · 15/10/2026</span><span class="titulo">Compare as propostas de Lula e Flávio para a educação</span></a></li>
+      <li><a href="https://www.correiobraziliense.com.br/politica/2026/04/7403233-flavio-avalia-reajuste-de-gastos-sociais-pela-inflacao-e-mais-privatizacoes.html"><span class="veiculo mono">Correio Braziliense · 22/04/2026</span><span class="titulo">Equipe avalia fim dos pisos de saúde e educação</span></a></li>
+      <li><a href="https://www.oliberal.com/politica/flavio-diz-que-nao-vai-desvincular-reajuste-do-minimo-e-nem-alterar-pisos-de-saude-e-educacao-1.1183567"><span class="veiculo mono">O Liberal · 17/10/2026 · resposta de Flávio</span><span class="titulo">Flávio diz que não vai alterar o piso da educação</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-verde" id="p07" aria-labelledby="p07-t">
+    <h3 id="p07-t">07 · A aposentadoria dos meus pais</h3>
+    <p class="resumo">A proposta de separar o reajuste das aposentadorias e do BPC do salário mínimo.</p>
+    <ul>
+      <li><a href="https://www.bahianoticias.com.br/noticia/316086-flavio-diz-que-e-fake-news-materia-da-folha-sobre-plano-que-reduz-aposentadorias-e-enfraquece-protecao-social"><span class="veiculo mono">Bahia Notícias · 23/04/2026</span><span class="titulo">A reportagem da Folha e a resposta de Flávio</span></a></li>
+      <li><a href="https://www.correiobraziliense.com.br/politica/2026/04/7403233-flavio-avalia-reajuste-de-gastos-sociais-pela-inflacao-e-mais-privatizacoes.html"><span class="veiculo mono">Correio Braziliense · 22/04/2026</span><span class="titulo">Reajuste de INSS e BPC só pela inflação</span></a></li>
+      <li><a href="https://www.oliberal.com/politica/flavio-diz-que-nao-vai-desvincular-reajuste-do-minimo-e-nem-alterar-pisos-de-saude-e-educacao-1.1183567"><span class="veiculo mono">O Liberal · 17/10/2026 · resposta de Flávio</span><span class="titulo">Flávio diz que não vai desvincular o reajuste do mínimo</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="p08" aria-labelledby="p08-t">
+    <h3 id="p08-t">08 · A natureza e a ciência</h3>
+    <p class="resumo">Desmatamento, clima e a PEC das Praias.</p>
+    <ul>
+      <li><a href="https://www.jb.com.br/brasil/meio-ambiente/2026/08/1060529-desmatamento-na-amazonia-cai-3687-e-atinge-menor-nivel-desde-2016.html"><span class="veiculo mono">Jornal do Brasil · dados do INPE · 07/08/2026</span><span class="titulo">Desmatamento na Amazônia cai 36,87% e atinge menor nível desde 2016</span></a></li>
+      <li><a href="https://atarde.com.br/eleicoes/flavio-bolsonaro-nega-aquecimento-global-sao-eventos-climaticos-1400144"><span class="veiculo mono">A Tarde · 28/08/2026</span><span class="titulo">Flávio evita dizer se acredita em aquecimento global</span></a></li>
+      <li><a href="https://www.poder360.com.br/congresso/privatizacao-das-praias-e-grande-mentira-diz-flavio-bolsonaro/"><span class="veiculo mono">Poder360 · 05/06/2024 · resposta de Flávio</span><span class="titulo">Flávio, relator da PEC das Praias, nega privatização</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="p09" aria-labelledby="p09-t">
+    <h3 id="p09-t">09 · Democracia e liberdade</h3>
+    <p class="resumo">A condenação de Jair, o indulto prometido e as vagas no STF.</p>
+    <ul>
+      <li><a href="https://www.itatiaia.com.br/politica/stf-condena-bolsonaro-a-27-anos-e-3-meses-pela-trama-golpista/"><span class="veiculo mono">Itatiaia · 11/09/2025</span><span class="titulo">STF condena Bolsonaro a 27 anos e 3 meses pela trama golpista</span></a></li>
+      <li><a href="https://sbtnews.sbt.com.br/noticia/politica/8-1-sem-anistia-darei-indulto-a-todo-mundo-diz-flavio"><span class="veiculo mono">SBT News · 29/09/2026</span><span class="titulo">Flávio promete indulto aos condenados do 8 de janeiro</span></a></li>
+      <li><a href="https://sbtnews.sbt.com.br/noticia/brasil/flavio-diz-que-colocara-ministros-que-respeitam-a-constituicao"><span class="veiculo mono">SBT News · 08/08/2026</span><span class="titulo">Flávio fala sobre as indicações ao STF</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-verde" id="p10" aria-labelledby="p10-t">
+    <h3 id="p10-t">10 · O Brasil dono de si</h3>
+    <p class="resumo">Terras raras e o tarifaço de Trump.</p>
+    <ul>
+      <li><a href="https://www.nsctotal.com.br/?p=7856727"><span class="veiculo mono">NSC Total · 28/03/2026</span><span class="titulo">Nos EUA, Flávio cita as terras raras do Brasil</span></a></li>
+      <li><a href="https://www.folhape.com.br/politica/flavio-bolsonaro-condiciona-fim-da-taxacao-a-anistia-se-brasil-fizer/427062"><span class="veiculo mono">Folha PE · 25/07/2025</span><span class="titulo">Flávio e o fim da taxação: "se o Brasil fizer o dever de casa"</span></a></li>
+      <li><a href="https://neofeed.com.br/economia/as-promessas-de-flavio-bolsonaro-privatizacao-de-95-das-estatais-e-corte-de-gastos-e-de-impostos/en/"><span class="veiculo mono">NeoFeed · 11/02/2026 · resposta de Flávio</span><span class="titulo">Flávio defende parceria público-privada para terras raras</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <h2 class="grupo-titulo">Outros carrosséis</h2>
+
+  <section class="post c-amarelo" id="c1" aria-labelledby="c1-t">
+    <h3 id="c1-t">Sala 2601</h3>
+    <p class="resumo">A empresa de Flávio e as firmas do "Careca do INSS" no mesmo endereço.</p>
+    <ul>
+      <li><a href="https://iclnoticias.com.br/?p=127692"><span class="veiculo mono">ICL Notícias · 11/09/2026</span><span class="titulo">Empresas de Flávio e Careca do INSS dividem a mesma sala</span></a></li>
+      <li><a href="https://www.brasildefato.com.br/2026/09/11/empresas-de-flavio-bolsonaro-e-careca-do-inss-dividem-a-mesma-sala-em-brasilia/"><span class="veiculo mono">Brasil de Fato · 11/09/2026</span><span class="titulo">Empresas dividem a mesma sala em Brasília</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="c2" aria-labelledby="c2-t">
+    <h3 id="c2-t">Fraude do INSS</h3>
+    <p class="resumo">A Operação Sem Desconto e o elo com Willer Tomaz.</p>
+    <ul>
+      <li><a href="https://noticias.uol.com.br/eleicoes/2026/10/21/o-que-acontece-na-sala-2601-entenda-pesquisa-impulsionada-nas-redes.amp.htm"><span class="veiculo mono">UOL · 21/10/2026</span><span class="titulo">O que acontece na sala 2601</span></a></li>
+      <li><a href="https://timesbrasil.com.br/brasil/pf-aponta-flavio-bolsonaro-como-usuario-master-de-conta-de-offshore-ligada-a-vorcaro/"><span class="veiculo mono">Times Brasil · repercutindo O Globo · 14/10/2026</span><span class="titulo">PF aponta Flávio como "usuário master" de conta</span></a></li>
+      <li><a href="https://www.jb.com.br/brasil/policia/2026/10/1061225-pf-cita-flavio-bolsonaro-como-usuario-master-de-conta-de-empresa-de-advogado.html"><span class="veiculo mono">Jornal do Brasil · out/2026</span><span class="titulo">PF cita Flávio como usuário master de conta de empresa de advogado</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="c3" aria-labelledby="c3-t">
+    <h3 id="c3-t">Rachadinha</h3>
+    <p class="resumo">A denúncia do MP-RJ e o arquivamento em 2022.</p>
+    <ul>
+      <li><a href="https://www.poder360.com.br/justica/justica-arquiva-denuncia-contra-flavio-bolsonaro-por-rachadinhas/"><span class="veiculo mono">Poder360 · 16/05/2022</span><span class="titulo">Justiça arquiva denúncia contra Flávio por rachadinhas</span></a></li>
+      <li><a href="https://istoe.com.br/mp-rj-detalha-denuncia-contra-flavio-bolsonaro-por-rachadinha/"><span class="veiculo mono">IstoÉ</span><span class="titulo">MP-RJ detalha denúncia contra Flávio</span></a></li>
+      <li><a href="https://atarde.com.br/eleicoes/rachadinha-relembre-o-caso-que-assombra-flavio-bolsonaro-1406232"><span class="veiculo mono">A Tarde</span><span class="titulo">Relembre o caso da rachadinha</span></a></li>
+      <li><a href="https://valor.globo.com/politica/eleicoes-2026/noticia/2026/10/18/flavio-bolsonaro-relembre-o-processo-da-rachadinha.ghtml"><span class="veiculo mono">Valor · 18/10/2026</span><span class="titulo">Relembre o processo da rachadinha</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="c4" aria-labelledby="c4-t">
+    <h3 id="c4-t">Patrimônio</h3>
+    <p class="resumo">A mansão no Lago Sul e o financiamento do BRB.</p>
+    <ul>
+      <li><a href="https://www.poder360.com.br/congresso/flavio-bolsonaro-nega-irregularidades-em-compra-de-mansao-por-r-6-milhoes/"><span class="veiculo mono">Poder360 · 02/03/2021</span><span class="titulo">Flávio nega irregularidades na compra da mansão</span></a></li>
+      <li><a href="https://jornaldebrasilia.com.br/noticias/politica-e-poder/flavio-bolsonaro-disse-ganhar-r-57-mil-metade-com-chocolates-ao-fazer-emprestimo-por-mansao/"><span class="veiculo mono">Jornal de Brasília</span><span class="titulo">A renda declarada ao BRB</span></a></li>
+      <li><a href="https://www.cartacapital.com.br/?p=437351"><span class="veiculo mono">CartaCapital · repercutindo o Estadão</span><span class="titulo">Flávio quita a mansão antes do prazo</span></a></li>
+      <li><a href="https://www.diariodepernambuco.com.br/politica/2026/10/11725606-pf-apura-condicoes-de-financiamento-do-brb-a-flavio-bolsonaro-para-mansao-de-rs-6-milhoes.html"><span class="veiculo mono">Diário de Pernambuco · 02/10/2026</span><span class="titulo">PF apura as condições do financiamento do BRB</span></a></li>
+      <li><a href="https://www.suno.com.br/noticias/?p=666129"><span class="veiculo mono">Suno · dados do TSE</span><span class="titulo">Patrimônio declarado de Flávio Bolsonaro</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="c5" aria-labelledby="c5-t">
+    <h3 id="c5-t">Emenda e milícia</h3>
+    <p class="resumo">A emenda destinada após pedido de Robson Calixto, o "Peixe".</p>
+    <ul>
+      <li><a href="https://g1.globo.com/politica/noticia/2026/09/22/flavio-bolsonaro-destinou-emenda-a-miliciano-condenado-por-morte-de-marielle-veja-prints-de-conversa-com-assessora-do-senador.ghtml"><span class="veiculo mono">g1 · 22/09/2026</span><span class="titulo">Emenda e as conversas com a assessora do senador</span></a></li>
+      <li><a href="https://www1.folha.uol.com.br/poder/2026/09/assessora-de-flavio-bolsonaro-negociou-liberacao-de-emendas-com-miliciano-condenado-no-caso-marielle.shtml"><span class="veiculo mono">Folha · set/2026</span><span class="titulo">Assessora negociou liberação de emendas</span></a></li>
+      <li><a href="https://www.itatiaia.com.br/politica/pf-investiga-assessora-flavio-bolsonaro-miliciano/"><span class="veiculo mono">Itatiaia</span><span class="titulo">PF investiga negociação de emendas</span></a></li>
+      <li><a href="https://agorarn.com.br/?p=2402833"><span class="veiculo mono">Agora RN · 22/09/2026</span><span class="titulo">Emenda de R$ 199,9 mil é investigada pela PF</span></a></li>
+      <li><a href="https://www.brasildefato.com.br/2026/05/20/pf-apura-emenda-de-flavio-bolsonaro-para-ong-suspeita-de-esquema-comandado-pelos-irmaos-brazao-condenados-pela-morte-de-marielle-franco/"><span class="veiculo mono">Brasil de Fato · 20/05/2026 · resposta de Flávio</span><span class="titulo">PF apura emenda para ONG</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-azul" id="c6" aria-labelledby="c6-t">
+    <h3 id="c6-t">Advocacia</h3>
+    <p class="resumo">Os R$ 13,7 milhões faturados pelo escritório de Flávio.</p>
+    <ul>
+      <li><a href="https://www1.folha.uol.com.br/poder/2026/10/escritorio-de-flavio-bolsonaro-faturou-r-14-mi-enquanto-ele-exercia-mandato-de-senador.shtml"><span class="veiculo mono">Folha · out/2026</span><span class="titulo">Escritório de Flávio faturou R$ 14 mi durante o mandato</span></a></li>
+      <li><a href="https://www.folhape.com.br/noticia/amp/519576/escritorio-de-flavio-bolsonaro-emitiu-r-137-milhoes-em-notas-fiscais/"><span class="veiculo mono">Folha PE · dados do UOL e O Globo</span><span class="titulo">Escritório emitiu R$ 13,7 milhões em notas fiscais</span></a></li>
+      <li><a href="https://www.radiopampa.com.br/transparencia-internacional-cobra-de-flavio-bolsonaro-explicacao-sobre-faturamento-de-r-137-milhoes-de-seu-escritorio-de-advocacia/"><span class="veiculo mono">Rádio Pampa · 21/10/2026 · resposta do escritório</span><span class="titulo">Transparência Internacional cobra explicação</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+
+  <section class="post c-amarelo" id="c7" aria-labelledby="c7-t">
+    <h3 id="c7-t">Campanha 2026</h3>
+    <p class="resumo">Barretos e a rede de perfis no Instagram.</p>
+    <ul>
+      <li><a href="https://www.diariodepernambuco.com.br/politica/2026/09/11723491-tse-abre-investigacao-sobre-suposto-abuso-de-poder-economico-em-ato-de-flavio-em-barretos.html"><span class="veiculo mono">Diário de Pernambuco · via Estadão · 10/09/2026</span><span class="titulo">TSE abre investigação sobre ato em Barretos</span></a></li>
+      <li><a href="https://g1.globo.com/politica/eleicoes/2026/noticia/2026/09/22/tse-aceita-acao-do-pt-que-pede-investigacao-de-suposta-rede-de-collabs-para-promover-flavio-bolsonaro-no-instagram.ghtml"><span class="veiculo mono">g1 · 22/09/2026</span><span class="titulo">TSE aceita ação sobre rede de collabs</span></a></li>
+      <li><a href="https://sbtnews.sbt.com.br/noticia/politica/tse-investiga-rede-de-collabs-na-campanha-de-flavio"><span class="veiculo mono">SBT News · 22/09/2026</span><span class="titulo">TSE investiga rede de collabs na campanha</span></a></li>
+    </ul>
+    <a class="topo-link mono" href="#topo">↑ Voltar ao índice</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Conversas que Importam</strong> · fatos com fonte, sem gritaria.</p>
+    <p>A gente tem lado e não esconde: somos contra a eleição de Flávio Bolsonaro. Por isso tudo aqui tem fonte, pra você conferir.</p>
+    <p><a href="https://www.instagram.com/conversasqimportam/">Siga @conversasqimportam no Instagram</a></p>
+  </div>
+</footer>
+</body>
+</html>
